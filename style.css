@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    height: 11vh;
+}
+.main-logo{
+    height: 10vh;
+}
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar-title{
+    padding-left: 2rem;
+    padding-top: 0.7rem;
+    width: 30%;
+    font-size: 2em;
+    color: black;
+    font-weight: 600;
+}
+
+.nav-search-input-div{
+    width: 40%;
+    text-align: center;
+    margin-top: 1.6rem;
+}
+
+.nav-search input{
+    width: 80%;
+    background-color: #f5f7f9;
+}
+.dropdown{
+    display: none;
+}
+.navbar-menu{
+    width: 30%;
+    padding-left: 2.5rem;
+    padding-top: 1.7rem;
+}
+
+.navbar-items{
+    margin-right: 21px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+
+.user-logo{
+    height: 30px;
+}
+
+.bg-img{
+    background-image: linear-gradient(to bottom, rgb(211 205 193 / 52%), rgb(157 115 19 / 73%)), url(./img/bg-img.jpg);
+    height: 80vh;
+    background-size: 100% 100%;
+    width: 100vw;
+    /* filter: blur(4px); */
+    opacity: 0.9;
+}
+
+.exploreBtn{
+    width: 114px;
+    height: 40px;
+    border: 0px;
+    border-radius: 20px;
+    padding: 7px;
+    cursor: pointer;
+    background-color: #f1e8de;
+
+}
+.dropbtn{
+    display: none;
+}
+
+.introText{
+    height: 80vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.introHeading{
+    text-align: center;
+    margin-bottom: 1.6rem;
+    font-size: 2em;
+    color: white;
+}
+
+.search-section{
+    height: 38vh;
+    background-color: #f5f7f9;
+
+}
+
+.search-title{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 3rem;
+    color: black;
+}
+
+.search-input-div{
+    /* height: 20vh; */
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.search-input{
+    width: 50vw;
+    height: 40px;
+    border: 0px;
+    background-color: white;
+    border-radius: 40px;
+    padding: 12px;
+}
+
+.tp-heading{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 54px;
+    color: black;
+
+}
+
+.tp-cards{
+    /* height: 40vh; */
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .tp-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .nav-search{
+        display: none;
+    }
+    .navbar-title{
+        width: 100%;
+
+    }
+    .search-section{
+        height: 44vh;
+    }
+    .navbar-menu a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .dropbtn{
+        display: block;
+        padding: 2rem;
+    }
+    
+}
