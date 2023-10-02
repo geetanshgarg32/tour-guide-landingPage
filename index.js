@@ -1,8 +1,23 @@
 function myFunction() {
-    var x = document.getElementById("navbar-menu");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    
+    var elms1 = document.getElementsByClassName("nav-search");
+    if (elms1[0].style.display === "block") {
+      elms1[0].style.display = "none";
     } else {
-      x.style.display = "block";
+      elms1[0].style.display = "block";
     }
+    var elms = document.getElementsByClassName("navbar-menu");
+    if (elms[0].style.display === "block") {
+      elms[0].style.display = "none";
+    } else {
+      elms[0].style.display = "block";
+    }
+    var elem = document.getElementsByClassName("navbarr");
+    Array.from(elem).forEach((h) => {
+      if(h.style.height==="40vh"){
+        h.style.height = "11vh";
+      }else{
+        h.style.height = "40vh";
+      }
+    })
 }
